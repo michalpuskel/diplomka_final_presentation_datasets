@@ -72,6 +72,7 @@ class BA_Graph:
                     if n < neighbour:
                         print(f'{n} {neighbour}', file=f)
 
+
 # interactive mode
 # ba = BA_Graph()
 
