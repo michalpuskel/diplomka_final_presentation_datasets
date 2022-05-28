@@ -72,5 +72,17 @@ class BA_Graph:
                     if n < neighbour:
                         print(f'{n} {neighbour}', file=f)
 
+# interactive mode
+# ba = BA_Graph()
 
-ba = BA_Graph()
+
+# seed mode
+ba = BA_Graph(False)
+
+n = 100
+m = [2, 5, 8]
+
+for mm in m:
+    for i in range(10):
+        ba.generate(n, mm)
+        ba.save_to_file(f'ba_n{n}_e{n*mm}_{i}.in.txt')
