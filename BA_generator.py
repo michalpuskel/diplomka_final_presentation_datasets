@@ -36,7 +36,7 @@ class BA_Graph:
 
         # loop
         initial_node_size = len(self.nodes)
-        for new_node in range(initial_node_size,  n - initial_node_size):
+        for new_node in range(initial_node_size, n):
             probability_2D = [[ix for _ in range(len(vertex))]
                               for ix, vertex in enumerate(self.nodes)]
             probability_flat = [v for prob in probability_2D for v in prob]
