@@ -53,8 +53,8 @@ class GEO_Graph:
                     new_vertex.add((vertex[0], vertex[1]))
                     self.nodes[(vertex[0], vertex[1])].add((x, y))
             if new_vertex:
-                self.nodes[(x, y)] = new_vertex
                 self.homomorphism[(x, y)] = len(self.nodes)
+                self.nodes[(x, y)] = new_vertex
 
     def node_size(self):
         return len(self.nodes)
