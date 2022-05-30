@@ -82,9 +82,10 @@ geo = GEO_Graph(False)
 
 max_range = 200
 n = 100
-r = [2, 5, 8]
+r = {2: '200', 25: '500', 50: '800'}
+
 
 for rr in r:
     for i in range(10):
         geo.generate(n, rr, max_range)
-        geo.save_to_file(f'geo_n{n}_e{n*rr}_{i}.in.txt')
+        geo.save_to_file(f'geo_n{n}_e{r[rr]}_{i}.in.txt')
